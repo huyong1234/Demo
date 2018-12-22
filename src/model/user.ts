@@ -8,6 +8,14 @@ export class User extends Model{
         const result = await User.findAll();
         return result;
     }
+    // 修改用户信息
+    public static async UpdateUsers(params): Promise<User | null> {
+        // 获取参数
+        const result = await User.update(params, {
+            where: { id: params.id}
+        });
+        return result;
+    }
     // 新增一条用户信息
     public static async CreateUsers(): Promise< User | null> {
         const result = await User.create({
@@ -15,6 +23,14 @@ export class User extends Model{
             "name":"胡勇",
             "account":"huyong",
             "password":"123"
+        });
+        return result;
+    }
+    // 删除一个用户
+    public static async DeletedUsers(id): Promise<User | null> {
+        // 获取参数
+        const result = await User.destroy({
+            where: id
         });
         return result;
     }

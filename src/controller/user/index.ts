@@ -18,6 +18,21 @@ export const CreatUser:Middleware =  async (ctx) => {
     const result = await User.CreateUsers();
     ctx.body = {code: 0, data: result, msg: "ok"};
 };
+
+export const UpdateUser:Middleware =  async (ctx) => {
+    console.log("修改");
+    // 获取参数
+    const params = ctx.request.body;
+    const result = await User.UpdateUsers(params);
+    ctx.body = {code: 0, data: result, msg: "ok"};
+};
+
+export const DeletedUser:Middleware =  async (ctx) => {
+    console.log("删除");
+    const id = ctx.request.query;
+    const result = await User.DeletedUsers(id);
+    ctx.body = {code: 0, data: result, msg: "ok"};
+};
    
     
     
