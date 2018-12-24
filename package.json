@@ -7,53 +7,23 @@
     "start": "tsc && node output/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "jest": {
-    "testURL": "http://localhost",
-    "transform": {
-      "^.+\\.(ts|tsx)$": "ts-jest"
-    },
-    "testMatch": [
-      "**/test/*.+(ts|tsx)"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
-  },
   "author": "huyong",
   "license": "ISC",
   "dependencies": {
     "@nestsoft/oss": "^2.1.2",
-    "axios": "^0.18.0",
-    "install": "^0.12.2",
-    "jwt-decode": "^2.2.0",
+    "chalk": "^2.4.1",
     "koa": "^2.5.2",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
-    "npm": "^6.5.0",
-    "pg": "^6.4.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-redux": "^6.0.0",
-    "react-router-dom": "^4.3.1",
-    "react-router-redux": "^4.0.8",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0",
-    "sequelize": "4.32.2"
+    "sequelize": "4.32.2",
+    "useragent": "^2.3.0"
   },
   "devDependencies": {
     "@nestsoft/config": "^2.3.2",
     "@nestsoft/koa-extended": "^1.0.1",
-    "@types/jest": "^23.3.10",
     "@types/koa": "^2.0.47",
     "@types/koa-router": "^7.0.35",
     "@types/sequelize": "types/sequelize#f61c659aa5737f38d9d890c15593af60ec91ee7f",
-    "@types/useragent": "^2.1.1",
-    "nodemon": "^1.18.9",
     "typescript": "^3.2.2"
   }
 }
