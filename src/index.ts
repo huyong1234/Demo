@@ -2,8 +2,8 @@ import * as Koa from 'koa';
 import * as http from "http";
 import Chalk from "chalk";
 import * as net from "net";
-import { Models } from "./server/model";
-import Router from "./server/router";
+import { Models } from "./model";
+import Router from "./router";
 
 (async () => {
     const app = new Koa();
