@@ -27,6 +27,7 @@
   "author": "huyong",
   "license": "ISC",
   "dependencies": {
+    "@nestsoft/oss": "^2.1.2",
     "axios": "^0.18.0",
     "install": "^0.12.2",
     "jwt-decode": "^2.2.0",
@@ -52,7 +53,6 @@
     "@types/koa-router": "^7.0.35",
     "@types/sequelize": "types/sequelize#f61c659aa5737f38d9d890c15593af60ec91ee7f",
     "@types/useragent": "^2.1.1",
-    "antd": "^3.11.2",
     "nodemon": "^1.18.9",
     "typescript": "^3.2.2"
   }

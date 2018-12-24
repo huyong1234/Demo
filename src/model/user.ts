@@ -17,18 +17,12 @@ export class User extends Model{
         return result;
     }
     // 新增一条用户信息
-    public static async CreateUsers(): Promise< User | null> {
-        const result = await User.create({
-            "id":1,
-            "name":"胡勇",
-            "account":"huyong",
-            "password":"123"
-        });
+    public static async CreateUsers(params): Promise< User | null> {
+        const result = await User.create(params);
         return result;
     }
     // 删除一个用户
     public static async DeletedUsers(id): Promise<User | null> {
-        // 获取参数
         const result = await User.destroy({
             where: id
         });

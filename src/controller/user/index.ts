@@ -14,8 +14,8 @@ export const findUser:Middleware =  async (ctx) => {
 };
 
 export const CreatUser:Middleware =  async (ctx) => {
-    console.log("创建");
-    const result = await User.CreateUsers();
+    const params = ctx.request.body;
+    const result = await User.CreateUsers(params);
     ctx.body = {code: 0, data: result, msg: "ok"};
 };
 

@@ -1,16 +1,24 @@
 /**
- * 登录相关路由
+ * 用户相关路由
  */
 
 import * as Router from "koa-router";
 import { User } from "../controller";
+import * as bodyParser from "koa-bodyparser";
 const router = new Router();
 
 // router
 //   .get("/define","",User.DefindUser);
 router
-  .get("findUser", "/test", User.findUser);  
-router
-  .get("CreatUser","/create",User.CreatUser);
+  .use(bodyParser({
+    extendTypes: {
+        json: ["application/json"],
+    },
+    jsonLimit: "100kb",
+  }))
+  .get("findUser", "/test", User.findUser)
+  .post("CreatUser","/create",User.CreatUser)
+  .put("UpdateUser","update",User.UpdateUser)
+  .delete("DeletedUser","delete",User.DeletedUser)
 
 export default router;
