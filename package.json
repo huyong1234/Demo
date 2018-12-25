@@ -10,7 +10,9 @@
   "author": "huyong",
   "license": "ISC",
   "dependencies": {
+    "@nestsoft/config": "^2.3.2",
     "@nestsoft/oss": "^2.1.2",
+    "@types/koa-bodyparser": "^4.2.1",
     "chalk": "^2.4.1",
     "koa": "^2.5.2",
     "koa-bodyparser": "^4.2.1",
@@ -19,7 +21,6 @@
     "useragent": "^2.3.0"
   },
   "devDependencies": {
-    "@nestsoft/config": "^2.3.2",
     "@nestsoft/koa-extended": "^1.0.1",
     "@types/koa": "^2.0.47",
     "@types/koa-router": "^7.0.35",

@@ -112,6 +112,13 @@
   resolved "https://nexus.xingfuli.me/repository/npm-proxy/@types/keygrip/-/keygrip-1.0.1.tgz#ff540462d2fb4d0a88441ceaf27d287b01c3d878"
   integrity sha1-/1QEYtL7TQqIRBzq8n0oewHD2Hg=
 
+"@types/koa-bodyparser@^4.2.1":
+  version "4.2.1"
+  resolved "https://nexus.xingfuli.me/repository/npm-proxy/@types/koa-bodyparser/-/koa-bodyparser-4.2.1.tgz#e78f9ff1a21f9ebe9bf16d702e9f2a6d0c0c870d"
+  integrity sha512-dd6mVT30OmGYIOmNRF3269Bv+IJ68AVrvYcPViB7bYnzxk7nZyfeAsUx96lvXmaTpOGF4XZ7WDCuSOd7Npi6pw==
+  dependencies:
+    "@types/koa" "*"
+
 "@types/koa-compose@*":
   version "3.2.2"
   resolved "https://nexus.xingfuli.me/repository/npm-proxy/@types/koa-compose/-/koa-compose-3.2.2.tgz#dc106e000bbf92a3ac900f756df47344887ee847"
